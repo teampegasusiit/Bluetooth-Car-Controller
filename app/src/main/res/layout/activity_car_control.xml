@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="ehs.bluethoothcontrolrobot.CarControl">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:id="@+id/buttonForward"
+        android:onClick="buttonForward_Click"
+        android:layout_marginTop="127dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/buttonBack"
+        android:onClick="buttonBack_Click"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/buttonLeft"
+        android:onClick="buttonLeft_Click"
+        android:layout_below="@+id/buttonForward"
+        android:layout_toStartOf="@+id/buttonBack"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/buttonRight"
+        android:onClick="buttonRight_Click"
+        android:layout_alignBottom="@+id/buttonLeft"
+        android:layout_toEndOf="@+id/buttonBack"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/btnGame"
+        android:layout_below="@+id/buttonForward"
+        android:onClick="buttonStop_Click"
+        android:layout_toEndOf="@+id/buttonLeft"
+        android:layout_toRightOf="@+id/buttonLeft" />
+
+    <Button
+        android:text="Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonDisconnect"
+        android:layout_alignRight="@+id/buttonRight"
+        android:layout_alignEnd="@+id/buttonRight"
+        android:id="@+id/button2"
+        android:onClick="gotoGame"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:id="@+id/buttonDisconnect"
+        android:onClick="buttonDisconnect_Click"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/buttonBack"
+        android:layout_toLeftOf="@+id/buttonBack"
+        android:layout_toStartOf="@+id/buttonBack" />
+</RelativeLayout>

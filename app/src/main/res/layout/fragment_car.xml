@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ehs.bluethoothcontrolrobot.CarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:id="@+id/buttonForward"
+        android:onClick="buttonForward_Click"
+        android:layout_marginTop="127dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/buttonBack"
+        android:onClick="buttonBack_Click"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/buttonLeft"
+        android:onClick="buttonLeft_Click"
+        android:layout_below="@+id/buttonForward"
+        android:layout_toStartOf="@+id/buttonBack"
+        android:layout_toLeftOf="@+id/buttonBack" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/buttonRight"
+        android:onClick="buttonRight_Click"
+        android:layout_alignBottom="@+id/buttonLeft"
+        android:layout_toEndOf="@+id/buttonBack"
+        android:layout_toRightOf="@+id/buttonBack" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/buttonStop"
+        android:layout_below="@+id/buttonForward"
+        android:onClick="buttonStop_Click"
+        android:layout_toEndOf="@+id/buttonLeft"
+        android:layout_toRightOf="@+id/buttonLeft" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:id="@+id/buttonDisconnect"
+        android:onClick="buttonDisconnect_Click"
+        android:layout_below="@+id/buttonBack"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
